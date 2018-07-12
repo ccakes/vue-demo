@@ -30,9 +30,7 @@ export default {
     //
     // it uses Promises which are a concept I found pretty tricky to grasp but once I did
     // I found they're pretty handy
-    // cors-anywhere is a hack to get around browser security for cross-origin requests
-    // don't worry about that now
-    fetch('https://cors-anywhere.herokuapp.com/https://ipapi.co/json')
+    fetch('https://ipapi.co/json')
       .then(response => response.json())
       .then(json => {
         this.ip = json.ip;

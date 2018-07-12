@@ -11,7 +11,6 @@
       // eslint-disable-next-line
       latitude: function(n, o) {
         this.map.flyTo([n, this.longitude], 12);
-        // this.map.
       }
     },
     data() {
